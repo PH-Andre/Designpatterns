@@ -3,6 +3,7 @@ import ChainOfResponsability.mainChainReponsability;
 import Composite.mainComposite;
 import Interpreter.mainInterpreter;
 import Prototype.mainPrototype;
+import State.StateDemo;
 import Visitor.mainVisitor;
 
 import java.io.IOException;
@@ -42,7 +43,7 @@ public class Main {
                                 // State
                                 System.out.println("___________________________________________________________________________________________________________________");
                                 System.out.println("Design pattern comportamental que permite que um objeto altere seu comportamento quando seu estado for alterado");
-
+                                StateDemo.main(args);
                                 System.out.println("___________________________________________________________________________________________________________________");
 
                         } else if (opcaoescolhida == 3) {

@@ -8,11 +8,11 @@ public class OrderedState implements PackageState{
 
     @Override
     public void prev(Package pkg) {
-        System.out.println("The package is in its root state.");
+        System.out.println("O pacote está em seu estado raiz.");
     }
 
     @Override
     public void printStatus() {
-        System.out.println("Package ordered, not delivered to the office yet.");
+        System.out.println("Pacote encomendado, ainda não entregue no escritório.");
     }
 }

@@ -14,6 +14,7 @@ public class DeliveredState implements PackageState{
 
     @Override
     public void printStatus() {
-        System.out.println("Package delivered to post office, not received yet.");
+        System.out.println("\n" +
+                "Pacote entregue nos correios, ainda não recebido.");
     }
 }
