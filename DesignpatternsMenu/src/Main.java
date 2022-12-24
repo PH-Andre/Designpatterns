@@ -5,6 +5,7 @@ import Interpreter.mainInterpreter;
 import Prototype.mainPrototype;
 import State.StateDemo;
 import Visitor.mainVisitor;
+import proxy.Mainproxy;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -25,7 +26,8 @@ public class Main {
                         System.out.println("4- Interpreter");
                         System.out.println("5- Composite");
                         System.out.println("6- Prototype");
-                        System.out.println("7- Sair");
+                        System.out.println("7- Proxy");
+                        System.out.println("8- Sair");
                         System.out.print("Digite o numero referente a sua escolha: ");
                         int opcao = scan.nextInt();
                         opcaoescolhida = opcao;
@@ -76,10 +78,15 @@ public class Main {
                                 mainPrototype.main(args);
                                 System.out.println("___________________________________________________________________________________________________________________");
                         } else if (opcaoescolhida == 7) {
-                               break;
-                        } else {
+                                //proxy
+                                System.out.println("___________________________________________________________________________________________________________________");
+                                System.out.println("Design pattern que nos permite criar um intermediário que atua como uma interface para outro recurso");
+                                Mainproxy.main(args);
+                                System.out.println("___________________________________________________________________________________________________________________");
+                        } else if (opcaoescolhida == 8){
+                                break;
+                        }else {
                                 System.out.println("Opcao invalida");
-
                         }
 
 

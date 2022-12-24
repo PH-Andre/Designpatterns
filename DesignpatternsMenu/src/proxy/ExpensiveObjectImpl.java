@@ -8,11 +8,11 @@ public class ExpensiveObjectImpl implements ExpensiveObject {
 
     @Override
     public void process() {
-        System.out.println("processing complete.");
+        System.out.println("processamento completo.");
     }
 
     private void heavyInitialConfiguration() {
-        System.out.println("Loading initial configuration...");
+        System.out.println("Carregando configuração inicial...");
     }
 
 }
